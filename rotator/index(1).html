@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="rotator2/css/index.default.css">
+  <link rel="icon" type="image/png" href="http://faucetjunkyhub.club/rotator2/bt-logos/png/IMG_2086.PNG" />
+  <link rel="stylesheet" href="w3.css">
+
+  <script src="js/whos.among.us.js" type="text/javascript">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script src="ro.js" type="text/javascript"></script>
+  
+  <title>faucet Junky Hub Club</title> <!--Change the black letters-->
+<?php
+$cookie_name = "bitcoin address";
+$cookie_value = "";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+?>
+
+  <!--  Styles  -->
+  
+<style>
+  input {float:right;cursor:pointer;color:#25313c;background-color:#cccc99;border-color:#cccc99;border-style:solid;font-family:Impact;color:#25313c;transition: 1s}
+body {
+transition: 1s
+}
+</style>
+<style>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:left;width:50%}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+    <br />
+    <br />
+  
+    <!--fixed sidebar-->
+    <nav class="nav navbar-default navbar-fixed-top w3-theme-d2">
+        <div class="navbar-header">
+            <div class="w3-sidebar w3-theme w3-card-2" style="width:130px;">
+
+                <button class="w3-button w3-block w3-center" onclick="myAccFunc()">Rotator Menu</button>
+                <div id="demoAcc" class="w3-bar-block w3-hide w3-card-4">
+                    <i class="fa fa-btc fa-1x w3-button w3-theme" style="width:100%; height: 100%;"><a href="index.html" target="_blank">Bitcoin</a></i>
+                    <button class="w3-button w3-theme" style="width:100%;">
+                        <a href="rotator2/ltc.index.html" target="_blank">
+                            <img src="icon/LTC.png" style="height20px; width: 15px;">Litecoin
+                        </a>
+                    </button>
+                    <button class="w3-button w3-theme" style="width:100%; height: 100%;"><a href="rotator2/black.index.html" target="_blank">Blackcoin</a></button>
+                    <button class="w3-button w3-theme" style="width:100%; height: 100%;"><a href="rotator2/doge.index.html" target="_blank">Dogecoin</a></button>
+                    <button class="w3-button w3-theme" style="width:100%; height: 100%;"><a href="rotator2/dash.index.html" target="_blank">Dashcoin</a></button>
+                    <button class="w3-button w3-theme" style="width:100%; height: 100%;"><a href="rotator2/peer.index.html" target="_blank">Peercoin</a></button>
+                    <button class="w3-button w3-theme" style="width:100%; height: 100%;">
+                        <a href="rotator2/prime.index.html" target="_blank"><button class="w3-button w3-theme" style="width:100%; height: 100%;">Primecoin</button></a>
+                    </button>
+                </div>
+                <div class="w3-dropdown-click w3-theme">
+                    <button class="w3-button w3-block w3-center w3-theme" onclick="myDropFunc()">Bitcoin Faucets</button>
+                    <div id="demoDrop" class="w3-bar-block w3-hide w3-card-4">
+                        <a href="http://zap.in/2OPo6" target="_blank"></a><button class="w3-button w3-theme" style="width:100%">Bitcoin</button>
+                        <button class="w3-button w3-theme" style="width:100%;"><a href="" target="_blank"><img src="icon/LTC.png" style="height20px; width: 20px;">Litecoin</a></button>
+                        <button class="w3-button w3-theme" style="width:100%;"><a href="#" target="_blank" class="w3-button w3-theme" style="width:100%;">Dash</a></button>
+                        <button class="w3-button w3-theme" style="width:100%;"><a href="#" target="_blank">Doge</a></button>
+                        <button class="w3-button w3-theme" style="width:100%;"><a href="#" target="_blank">Blackcoin</a></button>
+                        <button class="w3-button w3-theme" style="width:100%;"><a href="#" target="_blank">Peercoin</a></button>
+                        <button class="w3-button w3-theme" style="width:100%;"><a href="#" target="_blank">Primecoin</a></button>
+                        <button class="w3-button w3-theme" style="width:100%;"><a href="#">Coinbase</a></button>
+                        <a href="#" class="cancelbtn">Xapo</a>
+                    </div>
+                </div>
+
+
+                <div class="w3-theme w3-block w3-center">
+                    <i>Get a Wallet.</i>
+                    <button class="w3-button w3-theme" style="width:100%;"><a href="#">Coinbase</a></button>
+                    <button class="w3-button w3-theme" style="width:100%;"><a href="#">Xapo</a></button>
+                </div>
+
+                <h5>Signup</h5>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                    <form class="modal-content animate" action="login/welcome_get.php" method="post">
+                        <div class="container">
+                            <label><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                            <label><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                            <input type="checkbox" checked="checked"> Remember me
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <button type="submit" class="signupbtn">Sign Up</button>
+                            </div>
+                            <a target="_blank" href="" title="Share to Google Plus"><img src="images/gp.png" class="xicon" alt="Google Plus"></a><br />
+                            <a target="_blank" href="http://adz.bz/9n057" title="Share to Facebook"><img src="images/fb.png" class="xicon" alt="Facebook"></a><br />
+                            <a target="_blank" href="" title="Share to Twitter"><img src="images/tw.png" class="xicon" alt="Twitter"></a><br />
+                            <a target="_blank" href="" title="Send to E-Mail"><img src="images/mail.png" class="xicon" alt="Email"></a><br />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end sidebar-->
+            <!--navbar-->
+            
+            <i class="fa fa-btc fa-2x w3-button" style="float: left;" onclick="address()" type="text" onclick="this.select();" class="form-control coin_address" value="" aria-describedby="basic-addon1" /></i>
+            <a class="navbar-brand" href="index.html">Home</a><a href="#" "navbar-brand">Offerwall (Soon!)</a>
+        </div>
+        <form class="navbar-form navbar-right" role="search" style="text-align: right;">
+            <div class="form-group">
+                <input type="button" class="w3-button w3-black w3-load fa fa-spin" value="RELOAD" name="submit" onclick="changeSrc()" />
+                <input type="button" class="w3-button w3-theme fa" value="LINK" name="submit" onclick="newTab()" />
+                <input type="button" class="w3-button w3-orange fa" value="PREV SITE" name="submit" onclick="prev()" />
+                <input type="button" class="w3-button w3-orange fa" value="NEXT SITE" name="submit" onclick="next()" />
+            </div>
+            
+        </form>
+           
+    </nav>
+    <!--end navbar-->
+
+    <iframe scrolling="yes" id="fm" style="position:absolute;margin-top:-31px;width:100%;height:110%" frameborder="0" src="1index.html"></iframe>
+    <script id="_waukuh">var _wau = _wau || [];
+_wau.push(["tab", "9o2vtedozpkx", "kuh", "right-lower"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="//widgets.amung.us/tab.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+
+    <script>
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme";
+    } else {
+            x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-theme", "");
+    }
+}
+
+function myDropFunc() {
+    var x = document.getElementById("demoDrop");
+    if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme";
+    } else {
+            x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-theme", "");
+    }
+}
+    </script>
+    <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+            modal.style.display = "none";
+    }
+}
+    </script>
+    <script>
+function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+}
+    </script>
+</body>
+  
+</html>
