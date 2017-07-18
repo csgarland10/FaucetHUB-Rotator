@@ -1,0 +1,66 @@
+* 
+i {
+    color: w3-theme; 
+  animation: flicker 2.5s infinite;
+  }
+@keyframes flicker {
+  0% {color: white}
+  50% {color: orange}
+  100% {color: white}
+}
+input {
+    float: right;
+    cursor: pointer;
+    color: #25313c;
+    background-color: #cccc99;
+    border-color: #cccc99;
+    border-style: solid;
+    font-family: Impact;
+    color: #25313c;
+    transition: 5s
+    animation: flicker 2.5s infinite;
+}
+h6 {
+     float: right;
+}
+body {
+    background-image: url("http://faucetjunkyhub.club/rotator2/bt-logos/png/IMG_2086.PNG");
+    transition: 1s
+
+}
+html {
+    background-color: black;
+}
+ {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+Min-height: 10px
+min-width: 10px
+}
+a:link {
+  text-decoration: none;
+color: white;
+}
+a:visited {
+  text-decoration: none;
+
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+
+  color: white;
+}
+a:active {
+  text-decoration: none;
+
+  color: white;
+}
+    
+
+a:link {
+  text-decoration: none;
+
+  color: white;
+}

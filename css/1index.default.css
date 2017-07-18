@@ -1,0 +1,60 @@
+* 
+i {
+    color: black; 
+  animation: flicker 2.5s infinite;
+  }
+@keyframes flicker {
+  0% {color: white}
+  50% {color: orange}
+  100% {color: white}
+}
+html {
+    background-image: url("");
+    background-color: ;
+}
+  p {
+      font-family: Arial;
+      font-size: 15px;
+      margin-left: 10px;
+    }
+    a {
+      color: #cccc99;
+    }
+    li {
+      font-family: Arial;
+      font-size: 20px;
+      margin-left: 10px;
+      color: black;
+    }
+body {
+    height 100%;
+    width: 100%;
+    margin: 0 auto;
+Min-height: 10px
+min-width: 10px
+}
+div {
+    background-color:;
+}
+a:link {
+  text-decoration: none;
+color:white;
+}
+a:visited {
+  text-decoration: none;
+color:white;
+}
+a:hover {
+  text-decoration: none;
+color:white;
+}
+a:active {
+  text-decoration: none;
+color:white;
+}
+    
+
+a:link {
+  text-decoration: none;
+color:white;
+}
