@@ -1,0 +1,2 @@
+# FaucetHUB-Rotator
+Working rotator
